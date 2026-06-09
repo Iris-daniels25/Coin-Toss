@@ -6,6 +6,12 @@ This project was created to practice core C++ programming concepts including cla
 
 ---
 
+## Demo
+
+![Coin Toss Simulator](images/coin-toss-demo.png)
+
+---
+
 ## Features
 
 * Simulates an unlimited number of coin tosses

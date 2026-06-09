@@ -51,8 +51,14 @@ int main() {
 
     // Ask the user how many times to toss the coin
     cout << "How many times would you like to toss the coin? ";
-    cin >> tosses;
+    
+    // Validate user input
+while (!(cin >> tosses) || tosses <= 0) {
+    cout << "Please enter a positive integer greater than 0: ";
 
+    cin.clear();
+    cin.ignore(10000, '\n');
+}
     // Simulate the coin tosses
     for (int i = 0; i < tosses; i++) {
         coinTossSimulator.coinToss();
